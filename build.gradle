@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'org.sonarqube'
 
-group = 'com.github.jitpack'
+//group = 'com.github.jitpack'
 
 buildscript {
     repositories {
@@ -28,7 +28,7 @@ sonarqube {
 }
 
 dependencies {
-  compile 'com.google.guava:guava:18.0'
+  //compile 'com.google.guava:guava:18.0'
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
