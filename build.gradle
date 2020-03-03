@@ -5,12 +5,18 @@ apply plugin: 'org.sonarqube'
 group = 'com.github.jitpack'
 
 buildscript {
+    ext {
+        springBootVersion = '1.5.4.RELEASE'
+    }
     repositories {
         mavenCentral()
-        maven { url("https://plugins.gradle.org/m2/") }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
-
     dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5"
     }
 }
 
