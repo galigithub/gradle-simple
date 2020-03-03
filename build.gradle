@@ -31,7 +31,7 @@ dependencies {
   //compile 'com.google.guava:guava:18.0'
 }
 
-task sourcesJar(type: Jar, dependsOn: classes) {
+/*task sourcesJar(type: Jar, dependsOn: classes) {
     classifier = 'sources'
     from sourceSets.main.allSource
 }
@@ -60,7 +60,7 @@ install {
     }
   }
 }
-
+*/
 wrapper {
     gradleVersion = "5.1.1"
     distributionType = Wrapper.DistributionType.ALL
