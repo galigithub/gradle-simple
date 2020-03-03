@@ -1,12 +1,3 @@
-//apply plugin: 'org.sonarqube'
-plugins {
-    id 'org.sonarqube' version '2.7'
-    id 'java'
-    id 'maven'
-}
-
-//group = 'com.github.jitpack'
-
 buildscript {
     repositories {
         mavenCentral()
@@ -18,6 +9,15 @@ buildscript {
         classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5"
     }
 }
+
+//apply plugin: 'org.sonarqube'
+plugins {
+    id 'org.sonarqube' version '2.7'
+    id 'java'
+    id 'maven'
+}
+
+//group = 'com.github.jitpack'
 
 sourceCompatibility = 1.8 // java 8
 targetCompatibility = 1.8
