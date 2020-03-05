@@ -19,13 +19,13 @@ plugins {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-sonarqube {
+/*sonarqube {
     properties {
         property "sonar.projectName", "Sample Gradle Project"
         property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
         property "sonar.projectDescription", "Test Project"
     }
-}
+}*/
 
 dependencies {
 }
