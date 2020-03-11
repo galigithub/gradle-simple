@@ -4,7 +4,7 @@ node {
     }
     
     stage('Gradle Static Analysis'){
-        withSonarQubeEnv('DevSecOpsSonar') {
+        withSonarQubeEnv('shivasonarqube') {
             sh "./gradlew clean sonarqube"
         }
     }
